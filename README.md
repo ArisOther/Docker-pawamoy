@@ -79,6 +79,7 @@
     python_version = "3.6"
     ```
 - `pipenv lock` --> menghasilkan file Pipfile.lock
+- pipenv lock problem: berjalan diatas versi python tertentu, solve: `pipenv install --python=/usr/bin/python3.6`
 - Update dockerfile, agar bisa menginstall dependensi dari pipenv
     ```docker
     # start from an official image
