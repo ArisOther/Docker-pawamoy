@@ -13,6 +13,7 @@
     - https://linuxhint.com/upgrade-to-latest-sqlite3-on-centos7/
 - Update sqlite3-django
     - https://www.programmersought.com/article/61075311469/ 
+- [Kill runserver pada instance](https://stackoverflow.com/questions/27066366/django-development-server-how-to-stop-it-when-it-run-in-background#:~:text=You%20can%20Quit%20the%20server%20by%20hitting%20CTRL%2DBREAK.)
 ## Architecture plan
 
     ```
