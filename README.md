@@ -119,8 +119,11 @@
 - `docker build . -t hello`
 - `docker run -p 8000:8000 hello` --> run hello container
 - http://localhost:8000
+- Prolem:
+- jika pada langkah ini gunicorn tidak mau jalan, gunakan langkah sebelumnya (install diluar pipfile)
 
 ## Docker Compose - Djagoapp
+- Install docker-compose --> [link](https://docs.docker.com/compose/install/)
 - Buat `docker-compose.yml` --> tempatkan di root
     ```yml
     version: '3'
