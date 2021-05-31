@@ -1,4 +1,6 @@
 # DOCKER
+## Source Pawamoy
+- https://pawamoy.github.io/posts/docker-compose-django-postgres-nginx/
 ## Instalasi python & Django
 - https://dev.to/serhatteker/how-to-upgrade-to-python-3-7-on-ubuntu-18-04-18-10-5hab
 ## Install docker on ubuntu (aws)
