@@ -9,6 +9,8 @@
 - Daemon socket problem:
     - https://sysadminxpert.com/solved-permission-denied-while-trying-to-connect-to-the-docker-daemon-socket/
     - https://dev.to/try_catch/docker-connect-permission-denied-solved-1d2g
+- Update sqlite3
+    - https://linuxhint.com/upgrade-to-latest-sqlite3-on-centos7/
 ## Architecture plan
 
     ```
