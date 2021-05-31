@@ -3,6 +3,12 @@
 - https://dev.to/serhatteker/how-to-upgrade-to-python-3-7-on-ubuntu-18-04-18-10-5hab
 ## Install docker on ubuntu (aws)
 - https://www.linode.com/docs/guides/install-docker-ce-ubuntu-1804/
+## Install docker on Linux AMI (aws)
+- https://hackernoon.com/running-docker-on-aws-ec2-83a14b780c56
+- https://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html
+- Daemon socket problem:
+    - https://sysadminxpert.com/solved-permission-denied-while-trying-to-connect-to-the-docker-daemon-socket/
+    - https://dev.to/try_catch/docker-connect-permission-denied-solved-1d2g
 ## Architecture plan
 
     ```
