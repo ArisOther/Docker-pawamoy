@@ -205,14 +205,14 @@
 
     services:
 
-    djangoapp:
+      djangoapp:
         build: .
         volumes:
         - .:/opt/services/djangoapp/src
         networks:  # <-- here
         - nginx_network
 
-    nginx:
+      nginx:
         image: nginx:1.13
         ports:
         - 8000:80
@@ -223,8 +223,8 @@
         networks:  # <-- here
         - nginx_network
 
-    networks:  # <-- and here
-    nginx_network:
+      networks:  # <-- and here
+       nginx_network:
         driver: bridge
     ```
 - `docker-compose up`
