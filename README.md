@@ -281,10 +281,10 @@
         POSTGRES_DB=database1
         ```
 - Tambahkan service postgres di `docker-compose.yml`
-    ```yml
-    version: '3'
+  ```yml
+  version: '3'
 
-    services:
+  services:
 
     djangoapp:
         build: .
@@ -316,14 +316,14 @@
         volumes:
         - database1_volume:/var/lib/postgresql/data
 
-    networks:
-    nginx_network:
+  networks:
+      nginx_network:
         driver: bridge
-    database1_network:  # <-- add the bridge
+      database1_network:  # <-- add the bridge
         driver: bridge
 
-    volumes:
-    database1_volume:
+  volumes:
+      database1_volume:
     ```
     - Note:
         - database1 --> nama service harus sama dengan setting django dan db config
@@ -379,7 +379,7 @@
 
     services:
 
-    djangoapp:
+      djangoapp:
         build: .
         volumes:
         - .:/opt/services/djangoapp/src
@@ -391,7 +391,7 @@
         depends_on:
         - database1
 
-    nginx:
+      nginx:
         image: nginx:1.13
         ports:
         - 8000:80
@@ -404,7 +404,7 @@
         networks:
         - nginx_network
 
-    database1:
+      database1:
         image: postgres:10
         env_file:
         - config/db/database1_env
@@ -413,16 +413,16 @@
         volumes:
         - database1_volume:/var/lib/postgresql/data
 
-    networks:
-    nginx_network:
+   networks:
+      nginx_network:
         driver: bridge
-    database1_network:
+      database1_network:
         driver: bridge
 
-    volumes:
-    database1_volume:
-    static_volume:  # <-- declare the static volume
-    media_volume:  # <-- declare the media volume
+   volumes:
+      database1_volume:
+        static_volume:  # <-- declare the static volume
+        media_volume:  # <-- declare the media volume
     ```
 
 - Jalankan `docker-compose run djangoapp hello/manage.py collectstatic --no-input`
