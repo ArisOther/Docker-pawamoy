@@ -223,9 +223,9 @@
         networks:  # <-- here
         - nginx_network
 
-      networks:  # <-- and here
-       nginx_network:
-        driver: bridge
+   networks:  # <-- and here
+     nginx_network:
+       driver: bridge
     ```
 - `docker-compose up`
 - run http://localhost:8000
