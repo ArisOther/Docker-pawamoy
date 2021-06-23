@@ -421,8 +421,8 @@
 
    volumes:
       database1_volume:
-        static_volume:  # <-- declare the static volume
-        media_volume:  # <-- declare the media volume
+      static_volume:  # <-- declare the static volume
+      media_volume:  # <-- declare the media volume
     ```
 
 - Jalankan `docker-compose run djangoapp hello/manage.py collectstatic --no-input`
